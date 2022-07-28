@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Checkouts",
+        "slug": "checkouts"
+    },
+    {
+        "name": "Doubles",
+        "slug": "doubles"
+    },
+    {
+        "name": "Fun",
+        "slug": "fun"
+    },
+    {
+        "name": "Targeting",
+        "slug": "targeting"
+    },
+    {
+        "name": "Triples",
+        "slug": "triples"
+    }
+]
