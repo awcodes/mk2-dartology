@@ -29,5 +29,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::factory(10)->create()->each(fn ($member) => $member->assignRole('member'));
         \App\Models\User::factory(5)->banned()->create()->each(fn ($member) => $member->assignRole('member'));
+
+        $this->call(SkillSeeder::class);
     }
 }
