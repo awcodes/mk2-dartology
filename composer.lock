@@ -133,16 +133,16 @@
         },
         {
             "name": "awcodes/filament-sentry",
-            "version": "v1.0.4",
+            "version": "v1.0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awcodes/filament-sentry.git",
-                "reference": "1c40ba409f88bb670ffb3181ab13944564e6d1ba"
+                "reference": "0710d4f71db3580991a5e96dbbbe015ea1c85b2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awcodes/filament-sentry/zipball/1c40ba409f88bb670ffb3181ab13944564e6d1ba",
-                "reference": "1c40ba409f88bb670ffb3181ab13944564e6d1ba",
+                "url": "https://api.github.com/repos/awcodes/filament-sentry/zipball/0710d4f71db3580991a5e96dbbbe015ea1c85b2a",
+                "reference": "0710d4f71db3580991a5e96dbbbe015ea1c85b2a",
                 "shasum": ""
             },
             "require": {
@@ -186,9 +186,9 @@
             ],
             "support": {
                 "issues": "https://github.com/awcodes/filament-sentry/issues",
-                "source": "https://github.com/awcodes/filament-sentry/tree/v1.0.4"
+                "source": "https://github.com/awcodes/filament-sentry/tree/v1.0.6.1"
             },
-            "time": "2022-07-26T16:00:25+00:00"
+            "time": "2022-07-28T19:25:38+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -246,16 +246,16 @@
         },
         {
             "name": "bezhansalleh/filament-shield",
-            "version": "v2.0.5",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bezhanSalleh/filament-shield.git",
-                "reference": "8c1053c0d157e398606b7593167b35c06982c3ba"
+                "reference": "6f13709ab48888eec2fb1ad1c6516add6ef24187"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bezhanSalleh/filament-shield/zipball/8c1053c0d157e398606b7593167b35c06982c3ba",
-                "reference": "8c1053c0d157e398606b7593167b35c06982c3ba",
+                "url": "https://api.github.com/repos/bezhanSalleh/filament-shield/zipball/6f13709ab48888eec2fb1ad1c6516add6ef24187",
+                "reference": "6f13709ab48888eec2fb1ad1c6516add6ef24187",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +323,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bezhanSalleh/filament-shield/issues",
-                "source": "https://github.com/bezhanSalleh/filament-shield/tree/v2.0.5"
+                "source": "https://github.com/bezhanSalleh/filament-shield/tree/v2.0.7"
             },
             "funding": [
                 {
@@ -331,7 +331,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-07-25T21:11:28+00:00"
+            "time": "2022-07-28T18:47:41+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",

@@ -28,5 +28,6 @@ class DatabaseSeeder extends Seeder
         ])->assignRole('super_admin');
 
         \App\Models\User::factory(10)->create()->each(fn ($member) => $member->assignRole('member'));
+        \App\Models\User::factory(5)->banned()->create()->each(fn ($member) => $member->assignRole('member'));
     }
 }
