@@ -26,12 +26,14 @@ class RoutineResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\MultiSelect::make('skills')
+                    ->relationship('skills', 'name'),
+                Forms\Components\Toggle::make('published')->inline(false),
                 Forms\Components\Textarea::make('targets')
                     ->maxLength(65535),
                 Forms\Components\Textarea::make('goal')
                     ->maxLength(65535),
                 Forms\Components\Textarea::make('instructions'),
-                Forms\Components\Toggle::make('published')->inline(false),
                 Forms\Components\TextInput::make('form')
                     ->required()
                     ->maxLength(255),
