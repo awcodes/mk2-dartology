@@ -13,33 +13,12 @@ class SkillSeeder extends Seeder
      */
     public function run()
     {
-        $skills = [
-            [
-                'name' => 'Checkouts',
-                'slug' => 'checkouts',
-            ],
-            [
-                'name' => 'Doubles',
-                'slug' => 'doubles',
-            ],
-            [
-                'name' => 'Fun',
-                'slug' => 'fun',
-            ],
-            [
-                'name' => 'Targeting',
-                'slug' => 'targeting',
-            ],
-            [
-                'name' => 'Triples',
-                'slug' => 'triples',
-            ],
-        ];
+        $skills = json_decode(file_get_contents(database_path('/seeders/data/skills.json')));
 
         foreach ($skills as $skill) {
             \App\Models\Skill::create([
-                'name' => $skill['name'],
-                'slug' => $skill['slug'],
+                'name' => $skill->name,
+                'slug' => $skill->slug,
             ]);
         }
     }
