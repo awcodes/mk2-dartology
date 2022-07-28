@@ -107,7 +107,7 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('avatar_url')->size(32),
+                Tables\Columns\ImageColumn::make('avatar_url')->label('Avatar')->size(32),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
