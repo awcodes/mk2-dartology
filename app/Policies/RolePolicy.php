@@ -140,5 +140,4 @@ class RolePolicy
     {
         return $user->can('reorder_role');
     }
-
 }
