@@ -140,5 +140,4 @@ class CheckoutPolicy
     {
         return $user->can('reorder_checkout');
     }
-
 }
