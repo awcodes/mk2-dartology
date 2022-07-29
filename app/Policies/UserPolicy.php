@@ -140,4 +140,5 @@ class UserPolicy
     {
         return $user->can('reorder_user');
     }
+
 }

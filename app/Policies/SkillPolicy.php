@@ -140,4 +140,5 @@ class SkillPolicy
     {
         return $user->can('reorder_skill');
     }
+
 }
