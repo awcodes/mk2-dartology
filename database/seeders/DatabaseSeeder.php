@@ -16,8 +16,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(ShieldSettingSeeder::class);
-
         Artisan::call('shield:generate');
 
         Role::create(['name' => 'member'])->givePermissionTo('page_MyProfile');

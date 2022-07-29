@@ -138,6 +138,7 @@ class UserPolicy
      */
     public function reorder(User $user)
     {
-        return $user->can('{{ Reorder }}');
+        return $user->can('reorder_user');
     }
+
 }

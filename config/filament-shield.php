@@ -4,14 +4,11 @@ return [
     'shield_resource' => [
         'slug' => 'shield/roles',
         'navigation_sort' => 1,
+        'navigation_badge' => true,
     ],
 
     'auth_provider_model' => [
         'fqcn' => 'App\\Models\\User',
-    ],
-
-    'settings' => [
-        'enabled' => true,
     ],
 
     'super_admin' => [
@@ -33,6 +30,7 @@ return [
             'restore',
             'restore_any',
             'replicate',
+            'reorder',
             'delete',
             'delete_any',
             'force_delete',
