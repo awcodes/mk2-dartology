@@ -30,5 +30,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(SkillSeeder::class);
         $this->call(RoutineSeeder::class);
+        $this->call(CheckoutSeeder::class);
     }
 }
