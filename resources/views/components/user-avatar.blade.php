@@ -1,0 +1,1 @@
+<img class="block w-8 h-8 overflow-hidden border-2 rounded-full border-primary-700" src="{{ auth()->user()->avatar_url }}" alt="{{ auth()->user()->username }}">

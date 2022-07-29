@@ -56,7 +56,7 @@ class User extends Authenticatable implements HasAvatar
 
     public function getAvatarUrlAttribute()
     {
-        return $this->avatar ? $this->avatar : 'https://ui-avatars.com/api/?name='.urlencode($this->name).'&color=FFFFFF&background=111827';
+        return $this->avatar ? $this->avatar : 'https://ui-avatars.com/api/?name='.urlencode($this->name).'&color=FFFFFF&background=transparent';
     }
 
     public function results(): HasMany
