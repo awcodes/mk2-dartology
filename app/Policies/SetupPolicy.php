@@ -140,5 +140,4 @@ class SetupPolicy
     {
         return $user->can('reorder_setup');
     }
-
 }

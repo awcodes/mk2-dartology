@@ -1,0 +1,1 @@
+<x-wordmark class="h-6 text-primary-500"/>
