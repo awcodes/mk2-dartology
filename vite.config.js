@@ -3,6 +3,7 @@ import { homedir } from "os";
 import { resolve } from "path";
 import laravel from "laravel-vite-plugin";
 import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
 let inputs = [];
 const host = "mk2-dartology.test";
@@ -10,16 +11,33 @@ const host = "mk2-dartology.test";
 if (process.env.TAILWIND_CONFIG) {
     inputs = [`resources/css/${process.env.TAILWIND_CONFIG}.css`];
 } else {
-    inputs = ["resources/css/app.css", "resources/js/app.js"];
+    inputs = ["resources/js/app.js"];
 }
 
 export default defineConfig({
     plugins: [
         laravel({
             input: inputs,
+            ssr: "resources/js/ssr.js",
             refresh: true,
         }),
+        vue({
+            template: {
+                transformAssetUrls: {
+                    base: null,
+                    includeAbsolute: false,
+                },
+            },
+        }),
     ],
+    ssr: {
+        noExternal: ["vue", "@protonemedia/laravel-splade"],
+    },
+    resolve: {
+        alias: {
+            vue: "vue/dist/vue.esm-bundler",
+        },
+    },
     server: detectServerConfig(host),
     css: {
         postcss: {

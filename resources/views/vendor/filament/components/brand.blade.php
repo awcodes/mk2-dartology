@@ -1,1 +1,1 @@
-<x-wordmark class="h-6 text-primary-500"/>
+<x-application-logo class="w-auto h-6 text-primary-500"/>

@@ -3,7 +3,16 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: "class",
-    content: ["./resources/views/**/*.blade.php"],
+
+    content: [
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./vendor/protonemedia/laravel-splade/lib/**/*.vue",
+        "./vendor/protonemedia/laravel-splade/resources/views/**/*.blade.php",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.vue",
+    ],
+
     theme: {
         screens: {
             sm: "640px",
@@ -95,5 +104,8 @@ module.exports = {
             opacity: ["disabled"],
         },
     },
-    plugins: [require("@tailwindcss/forms")],
+    plugins: [
+        require("@tailwindcss/forms"),
+        require("@tailwindcss/typography"),
+    ],
 };

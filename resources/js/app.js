@@ -1,6 +1,15 @@
-import Alpine from "alpinejs";
-import Focus from "@alpinejs/focus";
+import "../css/app.css";
 
-Alpine.plugin(Focus);
+import { createApp } from "vue";
+import { renderSpladeApp, SpladePlugin } from "@protonemedia/laravel-splade";
 
-Alpine.start();
+const el = document.getElementById("app");
+
+createApp({
+    render: renderSpladeApp({ el }),
+})
+    .use(SpladePlugin, {
+        max_keep_alive: 10,
+        transform_anchors: false,
+    })
+    .mount(el);
